@@ -1,0 +1,57 @@
+{
+  "name": "hello-fresh-test",
+  "author": "Andrés Villarreal",
+  "private": true,
+  "version": "1.0.0",
+  "babel": {
+    "presets": ["env", "react", "stage-2"]
+  },
+  "jest": {
+    "setupFiles": ["./src/test-setup.js"],
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.{js,jsx}", "!**/node_modules/**"]
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "test": "jest",
+    "build:prettier": "prettier --write {src,server}/**/*.{js,jsx}",
+    "build:eslint": "eslint {src,server}/**/*.{js,jsx}",
+    "build:webpack": "NODE_ENV=production webpack",
+    "build":
+      "npm run build:prettier && npm run build:eslint && npm run build:webpack",
+    "serve": "node server/server.js"
+  },
+  "dependencies": {
+    "aphrodite": "^1.2.5",
+    "express": "^4.16.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-feather": "^1.0.8",
+    "react-router-dom": "^4.2.2",
+    "unstated": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.1.3",
+    "babel-jest": "^22.4.1",
+    "babel-loader": "^7.1.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.18.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "html-webpack-plugin": "^3.0.4",
+    "jest": "^22.4.2",
+    "react-hot-loader": "^4.0.0",
+    "react-test-renderer": "^16.2.0",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  }
+}
