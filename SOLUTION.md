@@ -7,7 +7,13 @@ You will need:
 * node 8.9.4 or higher
 * npm 5.6.0 or higher
 
-First, install the dependencies:
+First of all, export the following node options, as this project is too old and I can't be bothered to update the dependencies:
+
+```
+$ export NODE_OPTIONS=--openssl-legacy-provider
+```
+
+Then, install the dependencies:
 
 ```
 $ npm install

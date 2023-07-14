@@ -7,8 +7,6 @@ The goal of this test is to assert your coding, UI, HTML and CSS skills (to some
 
 Feel more than free to add any particular technique or algorithm at any point, which you think might enrich the overall quality of the end result. Take as much time as you want on the test, please do over-engineer we would like to assess all your skills!
 
-_Note: While we love open source here at HelloFresh, please do not create a public repo with your test in! This challenge is only shared with people interviewing, and for obvious reasons we'd like it to remain this way._
-
 Instructions
 ------------
 

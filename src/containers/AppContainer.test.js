@@ -1,4 +1,7 @@
-const mockRecipes = [{ id: 1, name: 'Casado' }, { id: 2, name: 'Gallopinto' }];
+const mockRecipes = [
+  { id: 1, name: 'Casado' },
+  { id: 2, name: 'Gallopinto' }
+];
 
 jest.mock('../services/recipes', () => {
   return {
